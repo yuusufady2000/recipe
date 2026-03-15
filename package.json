@@ -6,7 +6,9 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+     "start-api": "json-server --watch data/breakFast.json --port 8000"
+
   },
   "dependencies": {
     "@react-router/node": "7.12.0",
@@ -14,6 +16,8 @@
     "isbot": "^5.1.31",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-icons": "^5.5.0",
+    "react-loader-spinner": "^8.0.2",
     "react-router": "7.12.0"
   },
   "devDependencies": {
@@ -22,6 +26,7 @@
     "@types/node": "^22",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "json-server": "^1.0.0-beta.12",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
     "vite": "^7.1.7",
