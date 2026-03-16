@@ -11,7 +11,7 @@ const RecipeDetailPage = () => {
   const fetchRecipeDetail = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/${id}`);
       const data = (await res.json()) as RecipeItem;
       setRecipeDetail(data);
     } catch {

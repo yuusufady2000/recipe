@@ -10,7 +10,7 @@ const [dessert, setDessert] = useState<RecipeItem[]>([]);
 
 const fetchDessert = async () => {
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/recipes?category=Dessert`);
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/?category=Dessert`);
     const data = await res.json();
     setDessert(data);
   } catch (error) {

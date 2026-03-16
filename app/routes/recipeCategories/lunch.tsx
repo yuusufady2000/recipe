@@ -10,7 +10,7 @@ const Lunch = () => {
 
 const fetchLunch = async () => {
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/recipes?category=Lunch`);
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/?category=Lunch`);
     const data = await res.json();
     setLunchRecipes(data);
   } catch (error) {
