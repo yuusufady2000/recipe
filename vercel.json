@@ -1,6 +1,14 @@
 {
-"outputDirectory": "build/client",
-"rewrites": [
-{ "source": "/(.*)", "destination": "/" }
+"builds": [
+{
+"src": "build/server/index.js",
+"use": "@vercel/node"
+}
+],
+"routes": [
+{
+"src": "/(.*)",
+"dest": "build/server/index.js"
+}
 ]
 }
