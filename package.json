@@ -5,7 +5,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "vite preview",
     "typecheck": "react-router typegen && tsc",
      "start-api": "json-server --watch data/breakFast.json --port 8000"
 
