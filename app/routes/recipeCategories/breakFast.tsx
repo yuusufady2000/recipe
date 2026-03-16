@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
-import { FaCoffee, FaClock, FaUsers, FaStar, FaDollarSign } from "react-icons/fa";
+
 import { Link } from "react-router";
 import FoodLimit from "~/components/foodLimit";
 
 import type { RecipeItem } from "~/types";
 
-// export async function loader({request}:Route.LoaderArgs):
-// Promise<{}>
-// {
-  
-// }
+
 
 const BreakFast = () => {
   const [showBreakFast, setShowBreakFast] = useState<RecipeItem[]>([]);
